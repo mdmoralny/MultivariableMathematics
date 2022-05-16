@@ -1,0 +1,185 @@
+
+% two packages if you're not making pictures with tikz.
+\documentclass[11pt]{exam}
+
+\usepackage{graphicx} 
+\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace}
+\usepackage{amsmath,systeme}
+
+\usepackage[margin=1in]{geometry}
+% Here's where you edit the Class, Exam, Date, etc.
+\newcommand{\class}{Math 250}
+\newcommand{\term}{Spring 2022}
+\newcommand{\examnum}{Final Exam}
+\newcommand{\examdate}{05/18/ 2022}
+\newcommand{\timelimit}{120 Minutes}
+
+% For an exam, single spacing is most appropriate
+\singlespacing
+% \onehalfspacing
+% \doublespacing
+
+% For an exam, we generally want to turn off paragraph indentation
+\parindent 0ex
+
+\begin{document} 
+
+% These commands set up the running header on the top of the exam pages
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}{\examdate}
+\runningheadrule
+
+\begin{flushright}
+\begin{tabular}{p{2.8in} r l}
+\textbf{\class} & \textbf{Name:} & \makebox[3in]{\hrulefill}\\
+\textbf{\examnum} &&\\
+\textbf{\examdate}& & \textbf{Adelphi  University | Spring 2019}
+ 
+\end{tabular}\\
+\end{flushright}
+\rule[1ex]{\textwidth}{.1pt}
+
+
+This exam contains \numpages\ pages (including this cover page) and
+\numquestions\ problems.  Check to see if any pages are missing.  Enter
+all requested information on the top of this page, and put your initials
+on the top of every page, in case the pages become separated.\\
+
+
+You are required to show your work on each problem on this exam.  The following rules apply:\\
+
+%\begin{minipage}[t]{3.7in}
+\vspace{0pt}
+
+\begin{itemize}
+\item This exam is “open book,” which means you are permitted to use any materials handed out in class, your own notes from the course and the text book.
+
+\item You must print the exam out on 8.5” x 11” paper, single sided, with no more than one exam
+page per printed page
+\item \textbf{If you use a ``fundamental theorem'' you must indicate this} and explain
+why the theorem may be applied.
+
+\item \textbf{Organize your work}, in a reasonably neat and coherent way, in
+the space provided. Work scattered all over the page without a clear ordering will 
+receive very little credit.  
+
+\item \textbf{Mysterious or unsupported answers will not receive full
+credit}.  A correct answer, unsupported by calculations, explanation,
+or algebraic work will receive no credit; an incorrect answer supported
+by substantially correct calculations and explanations might still receive
+partial credit.
+\item The exam must be submitted \textbf{in person} on Wednesday May 18th no later than 12:30 pm.
+
+%\item \textbf{Cheating.} The following behaviors may be considered as possible acts of cheating:  talking during an exam, copying another’s test/assignment, allowing others to copy your work, roving eyes, open books or notebooks during an exam, crib sheets/ cheat sheets, passing notes during an exam,  taking an exam for someone else, using cell phone during exam.
+%\item If you need more space, use the back of the pages; clearly indicate when you have done this.
+\end{itemize}
+
+
+%\end{minipage}
+%\hfill
+%\begin{minipage}[t]{2.3in}
+
+
+
+\vspace{10mm}
+
+
+{\bf{On my honor, I have neither given nor received inappropriate or unauthorized information during this exam. \\  \\
+\textbf{Student's Signature:  \makebox[5in]{\hrulefill} }}}
+\newpage % End of cover page
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% See http://www-math.mit.edu/~psh/#ExamCls for full documentation, but the questions
+% below give an idea of how to write questions [with parts] and have the points
+% tracked automatically on the cover page.
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{questions}
+
+
+\addpoints
+\question[10] Verify this matrix is invertible, if so use Gaussian elimination to find the inverse of the following matrix. You won't receive credit if you do not verify the matrix is invertible.
+
+
+
+\[A=\begin{bmatrix}
+1 & 2 & 3 \\
+0 & 1 & -1 \\
+2 & 2 & 2
+\end{bmatrix}\]
+
+\newpage
+\addpoints
+\question[10] Given $a=\begin{bmatrix}-1\\-2\\2 \end{bmatrix}$ and $b=\begin{bmatrix}3\\3\\4 \end{bmatrix}$. Find the projection of \textbf{b} onto \textbf{a}. 
+
+
+\newpage
+\addpoints 
+\question[10]   Find the eigenvalues of 
+
+\[A=\begin{bmatrix}
+16 & 3 & 33\\
+0 & 1 & 0\\
+0 & 0 & -2
+\end{bmatrix}\]
+
+
+
+\newpage
+\addpoints 
+\question[10] Compute the cross product between \[\hat{u}=<1, 2, 3> \mbox{ and } \hat{v}=<3, 4, 5>\]
+
+
+
+\newpage
+\addpoints 
+\question[10] Given the vector valued functions $r(t)=\cos ti+\sin tj-e^{2t}k$
+and $u(t)=ti+\sin tj +\cos tk$ calculate $\frac{d}{dt}[u(t)\times r(t)]$
+\newpage
+\addpoints 
+\question[10] Find the gradient of the following function 
+\[f(x,y,z)=\frac{x^2-3y^2+z^2}{2x+y-4z}\]
+\newpage
+\addpoints 
+\question[10] Evaluate the double integral  \[\int _{-1}^1 \int_{2x^2}^{1+x^2} (x+2y)dy dx\]
+
+
+\newpage
+\addpoints 
+\question[10] Evaluate the double integral  \[\int _{0}^{\pi} \int_{1}^{2} y\sin(xy)dx dy\]  
+
+
+\newpage
+\addpoints
+\question[10] Use the chain rule to find possible partial derivatives \\
+\[z= x^4+x^2y\]
+where  \hspace{5mm} $x=s+2t$ \hspace{5mm} and  \hspace{5mm} $y=st$.
+
+\newpage
+\addpoints
+\question[10] A pair of spectacles are dropped from the $102^{nd}$ floor of the Empire State building with no initial velocity and fall $381$ meters. Three seconds later a math book is dropped from the $86^{th}$ floor and accelerates uniformly over a time of $5.21$ seconds for a distance of $110$ m. Assuming the gravitational field strength on the surface of the Earth is  $g= 9.8 \frac{N}{kg}$ draw a dinosaur next to the Empire State building holding the math book. 
+
+\end{questions}
+
+
+
+ 
+\newpage
+\textbf{Do not write on this page!}
+
+\begin{center}
+    \vspace{0pt}
+%\cellwidth{3em}
+\gradetablestretch{2}
+\vqword{Problem}
+\addpoints % required here by exam.cls, even though questions haven't started yet.	
+\gradetable[v]%[pages]  % Use [pages] to have grading table by page instead of question
+
+%\end{minipage}
+\end{center}
+
+\end{document}
